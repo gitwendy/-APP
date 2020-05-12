@@ -1,0 +1,34 @@
+<view class="classIty_container">
+  <view class="classIty_header">
+    <input placeholder="请输入搜索关键词" class="home_header_input" bindconfirm="onshow" bindinput="talk"  catchtap="onshow" ></input>
+  </view>
+  <view class="classIty_content">
+    <view class="classIty_content_left">
+      <view class="content_left_every {{index==selectIndex?'active':''}}" wx:for="{{leftData}}" wx:key="{{index}}" catchtap="onClick" data-index="{{index}}" data-id="{{item.id}}">
+        <view class="line"></view>
+        <view class="{{index==selectIndex?'newContent':''}}">{{item.name}}</view>
+      </view>
+    </view>
+    <view class="classIty_content_right">
+      <view class="shop_details" wx:for="{{rightData}}" wx:key="{{index}}" bindtap="toDetails" data-id="{{item.id}}">
+        <view class="shop_image">
+          <image class="" src="{{item.pic}}"></image>
+        </view>
+        <view class="shop_right_content">
+          <view class="shop_title">{{item.name}}</view>
+          <view class="shop_title_middle">
+            <view class="shop-price">￥{{item.minPrice}}</view>
+            <view class="shop_toshopCart">
+              <image src="/image/shop.png"></image>
+            </view>
+          </view>
+          <view class="shop_title_bottom">
+            <view class="shop_buy">已售0件</view>
+            <view class="shop_pingjia">评价 +0积分</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+  <!-- <view class="recommend_text" wx:if="{{rightData.length == 0}}">——— 暂无相关商品 ———</view> -->

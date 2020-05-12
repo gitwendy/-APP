@@ -1,0 +1,166 @@
+<view class="mine_container">
+  <view class="mine_head_portrait">
+    <!-- <image class="" src="" > -->
+    <view class="mine_image">
+      <image src="{{userInfo.avatarUrl==Info.Info?Info.Info:userInfo.avatarUrl}}"></image>
+    </view>
+    <!-- </image> -->
+  </view>
+  <view class="login">
+    <!-- bindtap="goLogin" -->
+
+    <button size="default" open-type="getUserInfo" bindgetuserinfo="getInformation">
+      {{userInfo.nickName==undefined?'立即登录':userInfo.nickName}}
+    </button>
+  </view>
+  <view class="mine_details_content">
+    <view class="balance">
+      <view>0.00</view>
+      <view class="my">余额</view>
+    </view>
+    <view class="freeze">
+      <view>0.00</view>
+      <view class="my">冻结</view>
+    </view>
+    <view class="integral">
+      <view>0.00</view>
+      <view class="my">积分</view>
+    </view>
+    <view class="growth">
+      <view>0.00</view>
+      <view class="my">成长值</view>
+    </view>
+  </view>
+  <view class="mine_order">
+    <view class="mine_order_content">我的订单</view>
+    <view class="mine_order_right">
+      <image src="/image/右箭头.png"></image>
+    </view>
+  </view>
+  <view class="mine_order_details">
+    <view class="my_order_every">
+      <view class="logo">
+        <image class="" src="/image/待付款.png"></image>
+      </view>
+      <view class="word">待付款</view>
+    </view>
+    <view class="my_order_every">
+      <view class="logo">
+        <image class="" src="/image/待发货.png"></image>
+      </view>
+      <view>待发货</view>
+    </view>
+    <view class="my_order_every">
+      <view class="logo">
+        <image class="" src="/image/待收货.png"></image>
+      </view>
+      <view>待收货</view>
+    </view>
+    <view class="my_order_every">
+      <view class="logo">
+        <image class="" src="/image/待评价.png"></image>
+      </view>
+      <view>待评价</view>
+    </view>
+    <view class="my_order_every">
+      <view class="logo">
+        <image class="" src="/image/售后.png"></image>
+      </view>
+      <view>售后</view>
+    </view>
+  </view>
+  <view class="mine_order">
+    <view class="mine_order_content">优惠买单</view>
+    <view class="mine_order_right">
+      <image src="/image/右箭头.png"></image>
+    </view>
+  </view>
+  <view class="mine_order">
+    <view class="mine_order_content">资金明细</view>
+    <view class="mine_order_right">
+      <image src="/image/右箭头.png"></image>
+    </view>
+  </view>
+  <view class="mine_order">
+    <view class="mine_order_content">成为分销商</view>
+    <view class="mine_order_right">
+      <image src="/image/右箭头.png"></image>
+    </view>
+  </view>
+  <view class="mine_order">
+    <view class="mine_order_content">申请发票</view>
+    <view class="mine_order_right">
+      <image src="/image/右箭头.png"></image>
+    </view>
+  </view>
+  <view class="mine_order">
+    <view class="mine_order_content">发票记录</view>
+    <view class="mine_order_right">
+      <image src="/image/右箭头.png"></image>
+    </view>
+  </view>
+  <view class="mine_order">
+    <view class="mine_order_content">收货地址</view>
+    <view class="mine_order_right">
+      <image src="/image/右箭头.png"></image>
+    </view>
+  </view>
+  <view class="mine_order">
+    <view class="mine_order_content">领券中心</view>
+    <view class="mine_order_right">
+      <image src="/image/右箭头.png"></image>
+    </view>
+  </view>
+  <view class="mine_order" catchtap="meCollect">
+    <view class="mine_order_content">我的收藏</view>
+    <view class="mine_order_right">
+      <image src="/image/右箭头.png"></image>
+    </view>
+  </view>
+  <view class="mine_order">
+    <view class="mine_order_content">每日签到</view>
+    <view class="mine_order_right">
+      <image src="/image/右箭头.png"></image>
+    </view>
+  </view>
+  <view class="mine_order">
+    <view class="mine_order_content">积分券兑换积分</view>
+    <view class="mine_order_right">
+      <image src="/image/右箭头.png"></image>
+    </view>
+  </view>
+  <view class="mine_order">
+    <view class="mine_order_content">积分券兑换成长值</view>
+    <view class="mine_order_right">
+      <image src="/image/右箭头.png"></image>
+    </view>
+  </view>
+  <view class="mine_order">
+    <view class="mine_order_content">关于我们</view>
+    <view class="mine_order_right">
+      <image src="/image/右箭头.png"></image>
+    </view>
+  </view>
+  <view class="mine_order_bindDingPhone">
+    <view class="mine_order_content">绑定手机</view>
+    <view class="mine_order_right_bang">
+      立即绑定
+      <!-- <button size="default" type="default">立刻绑定</button> -->
+      <!-- <image src="/image/右箭头.png"></image> -->
+    </view>
+  </view>
+  <view class="mine_order">
+    <view class="mine_order_content">清除缓存</view>
+    <view class="mine_order_right">
+      <image src="/image/右箭头.png"></image>
+    </view>
+  </view>
+  <view class="mine_order" catchtap="logOut">
+    <view class="mine_order_content">退出登录</view>
+    <view class="mine_order_right">
+      <image src="/image/右箭头.png"></image>
+    </view>
+  </view>
+  <view class="mine_Offer_topay"></view>
+</view>
+<!-- <template is="apifmLogin" data="{{wxlogin: wxlogin}}" /> -->

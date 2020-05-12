@@ -1,0 +1,100 @@
+<!-- index.wxml -->
+<view class="home_container">
+  <view class="classIty_header">
+    <input placeholder="请输入搜索关键词" id="home_header_input"></input>
+  </view>
+  <view class="home_banner">
+    <swiper autoplay="{{true}} " interval="3000" circular="{{true}}" indicator-dots="{{true}}">
+      <swiper-item wx:for="{{bannerData}}" wx:key="{{index}}">
+        <image src="{{item.picUrl}}" class="banner_image"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="proclamation">
+    <view class="proclamation_left">
+      <image class="proclamation_image" src="/image/通知公告.png" />
+      <view>商城新开张，优惠多多，戳戳戳 我看详情。</view>
+    </view>
+    <view class="proclamation_content">更多 ></view>
+  </view>
+  <view class="home_content">
+    <view class="every_list" wx:for="{{merchandiseCategories}}" wx:key="{{index}}" bindtap="toClassIty" data-id="{{item.id}}" data-index="{{index}}">
+      <view class="every_image">
+        <image class="" src="{{item.icon}}" />
+      </view>
+      <view class="every_name">{{item.name}}</view>
+    </view>
+  </view>
+  <view class="home_recommend">
+    <view class="line_through"></view>
+    <view>爆品推荐</view>
+    <view class="line_through"></view>
+  </view>
+  <view class="host_shop">
+    <view class="home_recommend_content" wx:for="{{recommendShop}}"  bindtap="toDetails" data-id="{{item.id}}">
+      <view class="home_recommend_image">
+        <image src="{{item.pic}}"></image>
+      </view>
+      <view class="home_recommend_title">{{item.name}}</view>
+      <view class="home_recommend_price">
+        <view class="home_recommend_hostPrice">￥ {{item.minPrice}}</view>
+        <view class="home_recommend_oldPrice">{{item.originalPrice}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="lop_content" wx:for="{{lopList}}" wx:key="{{index}}">
+    <view class="title">疯狂砍价</view>
+    <view class="lop_shop_details">
+      <view class="lop_shop_image">
+        <image src="{{item.pic}}"></image>
+      </view>
+      <view class="lop_shop_content">
+        <view class="lop_shop_title">{{item.name}}</view>
+        <view class="lop_shop_class">{{item.characteristic}}</view>
+        <view class="lop_shop_price">
+          <view class="lop_class_newPrice">原价:{{item.originalPrice}}</view>
+          <view class="lop_class_oldPrice">底价:{{item.kanjiaPrice}}</view>
+          <view>
+            <button class="kanjia" size="mini">拼团</button>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="home_recommend">
+    <view class="line_through"></view>
+    <view>全民拼团</view>
+    <view class="line_through"></view>
+  </view>
+  <view class="pintuan_details" wx:for="{{groupBooking}}" wx:key="{{index}}">
+    <view class="pintuan_image">
+      <image src="{{item.pic}}"></image>
+    </view>
+    <view class="pintuan_title">{{item.name}}</view>
+    <view class="pintuan_class">{{item.characteristic}}</view>
+    <view class="pintuan_kanjia">
+      <view class="pintuan_newPrice">￥ {{item.minPrice}}</view>
+      <view class="pintuan_oldPrice">{{item.originalPrice}}</view>
+      <view>
+        <button class="kanjia" size="mini">砍价</button>
+      </view>
+    </view>
+  </view>
+  <view class="home_recommend">
+    <view class="line_through"></view>
+    <view>商品列表</view>
+    <view class="line_through"></view>
+  </view>
+  <view class="host_shop">
+    <view class="home_recommend_content" wx:for="{{list}}" bindtap="toDetails" data-id="{{item.id}}">
+      <view class="home_recommend_image">
+        <image src="{{item.pic}}"></image>
+      </view>
+      <view class="home_recommend_title">{{item.name}}</view>
+      <view class="home_recommend_price">
+        <view class="home_recommend_hostPrice">￥ {{item.minPrice}}</view>
+        <view class="home_recommend_oldPrice">{{item.originalPrice}}</view>
+      </view>
+    </view>
+  </view>
+</view>

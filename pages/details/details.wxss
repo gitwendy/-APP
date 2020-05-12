@@ -1,0 +1,260 @@
+@import "/wxParse/wxParse.wxss";
+.details
+{
+  width:100%;
+  height:91vh;
+  background:rgb(242,242,242);
+  overflow: hidden;
+  overflow-y: auto;
+}
+.details_image
+{
+  width: 100%;
+  height:70%;
+}
+.details_image image
+{
+  width:100%;
+  height:100%;
+}
+.introduce
+{
+  width:100%;
+  height:17%;
+  background:white;
+}
+.introduce_name
+{
+  width:95%;
+  height:40%;
+  font-size: 80%;
+  padding: 3% 2% 0 3%;
+}
+.introduce_particulars
+{
+  width:100%;
+  height:55%;
+  padding-left: 3%;
+  display: flex;
+  align-items: center;
+  background:white;
+}
+.introduce_particulars_price
+{
+  width:70%;
+  height:100%;
+  display: flex;
+  align-items: center;
+}
+.introduce_particulars_presentPrice
+{
+  width:28%;
+  height:70%;
+  font-size: 108%;
+  color:red;
+}
+.introduce_particulars_presentPrice text
+{
+  font-size: 70%;
+}
+.introduce_particulars_rawPrice
+{
+  width:25%;
+  height:70%;
+  display: flex;
+  align-items: center;
+  color:gainsboro;
+  text-decoration: line-through;
+  font-size: 70%;
+}
+.introduce_particulars_alreadyHave
+{
+  width:30%;
+  height:70%;
+  color:gray;
+  font-size: 70%;
+  display: flex;
+  align-items: center;
+}
+.introduce_particulars_share
+{
+  width:30%;
+  height:100%;
+  display: flex;
+}
+.introduce_particulars_share_transmit
+{
+  width:40%;
+  height:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.introduce_particulars_share_transmit image
+{
+  width:90%;
+  height:75%;
+}
+.introduce_particulars_share_carriage
+{
+  width:50%;
+  height:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.introduce_particulars_share_carriage image
+{
+  width:55%;
+  height:60%;
+}
+/* 选择 */
+.select
+{
+  width:100%;
+  height:9%;
+  margin-top:8%;
+  background:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.select_astrict
+{
+  width:90%;
+  height:70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.select_astrict_selected
+{
+  width:90%;
+  height:100%;
+  display: flex;
+  align-items: center;
+  font-size: 80%;
+}
+.select_astrict_arrows
+{
+  width:10%;
+  height:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:gainsboro;
+}
+.commodity_introduce
+{
+  width:100%;
+  background:white;
+  margin-top:8%;
+}
+.presentation
+{
+  width:95%;
+  height:120rpx;
+  padding-left:5%;
+  font-size: 80%;
+  display: flex;
+  align-items: center;
+}
+.scope
+{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/* 底部导航样式 */
+.bottomNavigation
+{
+  width:100%;
+  height:10vh;
+  display: flex;
+}
+.skipAreaLeft
+{
+  width:40%;
+  height:100%;
+  display: flex;
+}
+.skipAreaLeft_left
+{
+  width:33%;
+  height:100%;
+}
+.unify_image
+{
+  width:100%;
+  height:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.unify_image image
+{
+  width:80%;
+  height:70%;
+}
+.ladyBags_image
+{
+  width:100%;
+  height:63%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ladyBags_image image
+{
+  width:80%;
+  height:100%;
+  margin-top: 33%;
+}
+.shoppingCart_image
+{
+  width:100%;
+  height:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shoppingCart_image image
+{
+  width: 70%;
+  height:65%;
+}
+.skipAreaLeft_center
+{
+  width:33%;
+  height:100%;
+}
+.skipAreaLeft_right
+{
+  width:33%;
+  height:100%;
+}
+.skipAreaCenter
+{
+  width:30%;
+  height:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:rgb(255,104,80);
+  color:white;
+}
+.skipAreaRight
+{
+  width:30%;
+  height:100%;
+  background:rgb(230,67,64);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:white;
+}
+.collect_icon{
+  width: 50rpx;
+  height: 50rpx
+}

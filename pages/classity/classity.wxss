@@ -1,0 +1,156 @@
+.classIty_container {
+  width: 100%;
+  height: 1200rpx;
+  /* background-color: pink; */
+}
+
+.home_header_input {
+  width: 90%;
+  margin-left: 5%;
+  border: 1px solid gray;
+  height: 60rpx;
+  border-radius: 30rpx;
+  text-indent: 30rpx;
+  background-color: white;
+  margin-top: 10rpx;
+}
+
+.classIty_header {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  /* position: fixed; */
+  height: 88rpx;
+  width: 100%;
+  background-color: white;
+}
+.recommend_text{
+  margin-left: 258rpx;
+  margin-top: -1050rpx;
+}
+
+.classIty_content {
+  width: 100%;
+  height: 1200rpx;
+  border: 1px solid slategrey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.classIty_content_left {
+  width: 25%;
+  height: 1200rpx;
+  overflow: scroll;
+  /* border:1px solid darkblue; */
+}
+
+.classIty_content_right {
+  width: 75%;
+  overflow: hidden;
+  overflow-y: auto;
+  height: 1200rpx;
+  /* border: 1px solid aqua; */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.content_left_every {
+  width: 100%;
+  height: 110rpx;
+  font-size: 18px;
+  text-align: center;
+  line-height: 110rpx;
+  color: gray;
+}
+
+.active {
+  border-left: 1.5px solid red;
+}
+
+.shop_details {
+  width: 100%;
+  height: 220rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shop_image {
+  width: 30%;
+  height: 180rpx;
+  /* border:1px solid red; */
+}
+
+.shop_image image {
+  width: 100%;
+  height: 100%;
+}
+
+.shop_right_content {
+  width: 70%;
+  height: 180rpx;
+  /* border:1px solid forestgreen; */
+}
+
+.shop_title {
+  width: 100%;
+  height: 60rpx;
+  /* border: 1px solid springgreen; */
+}
+
+.shop_title_middle {
+  width: 100%;
+  height: 60rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shop_title_bottom {
+  width: 100%;
+  height: 60rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shop-price {
+  color: red;
+  font-weight: 700;
+}
+
+.shop_pingjia {
+  color: gray;
+}
+
+.shop_buy {
+  color: orangered;
+  border: 1px solid orangered;
+}
+
+.shop_title {
+  font-weight: 700;
+  display: inline-block;
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.shop_toshopCart {
+  width: 15%;
+  height: 60rpx;
+}
+
+.shop_toshopCart image {
+  width: 100%;
+  height: 100%;
+}
+
+.newContent {
+  font-weight: 700;
+  color: red;
+}

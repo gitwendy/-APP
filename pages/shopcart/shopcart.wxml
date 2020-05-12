@@ -1,0 +1,24 @@
+<view class="shop_list_container" wx:if="{{shopList.length!==0}}">
+  <view class="shop_list_every" wx:for="{{shopList}}" wx:key="{{index}}">
+    <van-card num="{{item.number}}" price="{{item.price}}" title="{{item.name}}" thumb="{{ item.pic}}">
+      <view slot="footer">
+        <image class="" src="../../image/删除.png" class="del" catchtap="del" data-key="{{item.key}}" data-index="{{index}}" />
+        <van-button size="mini" catchtap="prev" data-index="{{index}}">-</van-button>
+        <van-button size="mini" catchtap="next" data-index="{{index}}">+</van-button>
+      </view>
+    </van-card>
+  </view>
+  <view class="shop_list_tabbar">
+    <view class="heji">合计:{{totalPrice}} +0积分</view>
+    <view class="close">去结算</view>
+  </view>
+</view>
+<view wx:if="{{shopList.length===0}}">
+  <view class="none_shop">
+    <view class="none_image">
+      <image class="" src="/image/shop.png"></image>
+    </view>
+    <view class="none_content">购物车空空如也~</view>
+    <view class="none_look" catchtap="toIndex">去逛逛</view>
+  </view>
+</view>

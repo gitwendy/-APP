@@ -1,0 +1,318 @@
+.home_container {
+  width: 100%;
+  height: 1800rpx;
+  /* background-color: pink; */
+}
+
+.home_banner {
+  width: 100%;
+  height: 300rpx;
+  background-color: saddlebrown;
+}
+
+#home_header_input {
+  width: 90%;
+  margin-left: 5%;
+  height: 60rpx;
+  border-radius: 30rpx;
+  text-indent: 30rpx;
+  background-color: white;
+  position: absolute;
+  border: 1px solid gray;
+  top: 20rpx;
+
+}
+
+.home_content {
+  width: 100%;
+  height: 400rpx;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.home_content>view {
+  width: 18%;
+  height: 195rpx;
+  border: 1px solid snow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.every_image {
+  width: 100%;
+  height: 70%;
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.every_image image {
+  width: 80%;
+  height: 80%;
+
+}
+
+.home_recommend {
+  width: 100%;
+  height: 120rpx;
+  /* border: 1px solid firebrick; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+}
+
+.banner_image {
+  width: 100%;
+  height: 350rpx;
+}
+
+.proclamation {
+  width: 100%;
+  height: 80rpx;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.proclamation_left {
+  width: 82%;
+  height: 80rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 14px;
+  color: red;
+}
+
+.proclamation_image {
+  width: 8%;
+  height: 60%;
+  margin-top: 2%;
+}
+
+.proclamation_content {
+  font-size: 14px;
+  color: gray;
+  width: 18%;
+  text-align: center;
+}
+
+.line_through {
+  width: 25%;
+  border: 1px solid lightgray;
+}
+
+.host_shop {
+  width: 100%;
+  height: 500rpx;
+  /* border: 1px solid red; */
+  display: flex;
+  background-color: #F2F2F2;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.home_recommend_content {
+  width: 45%;
+  height: 500rpx;
+  background-color: white;
+
+}
+
+.home_recommend_image {
+  width: 100%;
+  height: 300rpx;
+  /* border: 1px solid darkcyan; */
+}
+
+.home_recommend_image image {
+  width: 100%;
+  height: 100%;
+}
+
+.home_recommend_title {
+  width: 100%;
+  height: 60rpx;
+  line-height: 60rpx;
+  /* border: 1px solid forestgreen; */
+  display: inline-block;
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
+.home_recommend_price {
+  width: 100%;
+  height: 60rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* border: 1px solid darkblue; */
+}
+
+.home_recommend_hostPrice {
+  color: red;
+}
+
+.home_recommend_oldPrice {
+  color: gray;
+  text-decoration: line-through;
+}
+
+.lop_content {
+  width: 100%;
+  height: 300rpx;
+  /* border: 1px solid red; */
+}
+
+.title {
+  width: 100%;
+  height: 80rpx;
+  /* border:1px solid rebeccapurple; */
+  line-height: 80rpx;
+  font-weight: 700;
+  margin-left: 20rpx;
+  /* text-indent: 40rpx; */
+  border-bottom: 1px solid gray;
+}
+
+.lop_shop_details {
+  display: flex;
+  width: 100%;
+  height: 220rpx;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lop_shop_image {
+  width: 25%;
+  height: 220rpx;
+  /* border: 1px solid aqua; */
+}
+.lop_shop_image image{
+  width: 100%;
+  height: 100%;
+}
+
+.lop_shop_content {
+  width: 75%;
+  height: 220rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.lop_shop_title {
+  width: 100%;
+  height: 60rpx;
+line-height: 60rpx;
+  /* border: 1px solid aqua; */
+  display: inline-block;
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  font-weight: 700;
+}
+
+.lop_shop_class {
+  width: 100%;
+  height: 60rpx;
+line-height: 60rpx;
+  /* border: 1px solid aqua; */
+  color: gray;
+}
+.lop_shop_price{
+  width: 100%;
+  height: 100rpx;
+
+  /* border: 1px solid aqua; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.lop_class_oldPrice{
+color: red;
+}
+.kanjia{
+  width: 250rpx;
+  height: 60rpx;
+  margin-right: 40rpx;
+  background-color: red;
+  color: white;
+}
+.pintuan_details{
+  width: 100%;
+  height: 580rpx;
+  /* background-color: #F2F2F2; */
+  
+}
+.pintuan_image{
+  width: 100%;
+  height: 180px;
+  /* border:1px solid red; */
+}
+.pintuan_image image{
+  width: 100%;
+  height: 100%;
+}
+.pintuan_title{
+  width: 100%;
+  height: 80rpx;
+  /* border:1px solid aqua; */
+  /* font-weight: 700; */
+}
+.pintuan_class{
+  width: 100%;
+  height: 60rpx;
+  /* border:1px solid chartreuse; */
+  color: gray;
+}
+.pintuan_kanjia{
+  width: 100%;
+  height: 60rpx;
+  /* border:1px solid wheat; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.pintuan_newPrice{
+  color: red;
+  width: 20%;
+  text-align: left;
+}
+.pintuan_oldPrice{
+  line-height: 60rpx;
+  color: gray;
+  text-decoration: line-through;
+  width: 20%;
+
+}
+.shop_list_container{
+  width: 100%;
+  height: 1000rpx;
+  border:1px solid red;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.shop_list_details{
+  width: 45%;
+  height: 250px;
+  border:1px solid wheat;
+}

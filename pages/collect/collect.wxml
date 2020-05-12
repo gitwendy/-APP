@@ -1,0 +1,13 @@
+<view class="fav_container">
+  <view class="fav_details" wx:for="{{favList}}" wx:key="{{index}}">
+    <view class="fav_image">
+      <image src="{{item.pic}}"></image>
+    </view>
+    <view class="fav_name">
+      {{item.goodsName}}
+    </view>
+    <view class="fav_del">
+    <image src="/image/删除.png" catchtap="favdel" data-index="{{index}}" data-item="{{item}}"></image>
+    </view>
+  </view>
+</view>

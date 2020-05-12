@@ -1,0 +1,70 @@
+<loading hidden="{{listIcon}}">数据加载中...</loading>
+<view class="list">
+  <!-- 搜索框部分 -->
+  <view class="list_top">
+    <view class="list_top_input">
+      <input type="text" 
+        placeholder="输入搜索关键字"
+        bindconfirm="onshow" 
+        bindinput="talk"
+        />
+      <image catchtap="onshow" src="/image/搜索.png"  />
+    </view>
+    <view class="list_top_image">
+      <image class="list_top_imageOne" wx:if="{{!cutIcon}}" catchtap="alertICon" src="/image/分类（1）.png" />
+      <image class="list_top_imageTwo" wx:if="{{cutIcon}}" catchtap="alertICon" src="/image/分类.png" />
+      </view>
+  </view>
+  <!-- 查找条件 -->
+  <view class="condition">
+    <block wx:for="{{conditionArr}}" wx:key="{{index}}">
+      <view class="condition_each" 
+        style="color:{{conditionIndex == index?'red':''}}" 
+        catchtap="clickCondition" 
+        data-index="{{index}}">
+          {{item}}
+      </view>
+    </block>
+  </view>
+<!-- 横向布局 -->
+  <view class="crosswise" wx:if="{{!cutIcon && showArr.length != 0}}">
+    <block wx:for="{{showArr}}" wx:key="{{index}}">
+      <view class="crosswise_outerBox" catchtap="skipDetails" data-id="{{item.id}}">
+        <view class="crosswise_image"><image src="{{item.pic}}" /></view>
+        <view class="crosswise_introduce">
+          <view class="crosswise_introduce_name">{{item.name}}</view>
+          <view class="crosswise_introduce_box">
+            <view class="crosswise_introduce_box_price">
+              <view class="crosswise_introduce_box_price_top">￥{{item.minPrice}}</view>
+              <view class="crosswise_introduce_box_price_bottom">已出售{{item.numberSells}}件</view>
+            </view>
+            <view class="crosswise_introduce_box_icon">
+              <image src="/image/购物车(2).png" catchtap="addShoppingCart" data-obj="{{item}}" />
+            </view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+  <!-- 纵向布局 -->
+  <view class="lengthways" wx:if="{{cutIcon && showArr.length != 0}}">
+    <block wx:for="{{showArr}}" wx:key="{{index}}">
+      <view class="lengthways_outerBox" catchtap="skipDetails" data-id="{{item.id}}">
+        <view class="lengthways_image"><image src="{{item.pic}}" /></view>
+        <view class="lengthways_introduce">
+          <view class="lengthways_introduce_name">{{item.name}}</view>
+          <view class="lengthways_introduce_box">
+            <view class="lengthways_introduce_box_left">
+              <view class="lengthways_introduce_box_left_price">￥{{item.minPrice}}</view>
+              <view class="lengthways_introduce_box_left_sell">已出售{{item.numberSells}}件</view>
+            </view>
+            <view class="lengthways_introduce_box_right">
+              <image src="/image/购物车(2).png" catchtap="addShoppingCart" data-obj="{{item}}" />
+            </view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+  <view class="recommend_text" wx:if="{{showArr.length == 0}}" >—————— 暂无相关商品 ——————</view>
+</view>

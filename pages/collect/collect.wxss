@@ -1,0 +1,49 @@
+.fav_container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.fav_details {
+  width: 44%;
+  height: 500rpx;
+  /* border:1px solid red; */
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 20rpx;
+
+
+}
+
+.fav_image {
+  width: 100%;
+  height: 300rpx;
+  border-radius: 25rpx;
+}
+
+.fav_image image {
+  width: 100%;
+  height: 100%;
+  border-radius: 25rpx;
+
+}
+
+.fav_name {
+  width: 100%;
+  height: 70rpx;
+}
+
+.fav_del {
+  width: 100%;
+  height: 70rpx;
+}
+
+.fav_del image {
+  width: 70rpx;
+  height: 70rpx;
+}

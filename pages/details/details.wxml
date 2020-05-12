@@ -1,0 +1,67 @@
+<import src="/wxParse/wxParse.wxml" />
+<loading hidden="{{detailsLoadimg}}">加载中...</loading>
+<view class="details">
+  <view class="details_image">
+    <image src="{{detailsObj.basicInfo.pic}}" />
+  </view>
+  <view class="introduce">
+    <view class="introduce_name">{{detailsObj.basicInfo.name}}</view>
+    <view class="introduce_particulars">
+      <view class="introduce_particulars_price">
+        <view class="introduce_particulars_presentPrice">
+          <text>￥</text>
+          {{detailsObj.basicInfo.minPrice}}
+        </view>
+        <view class="introduce_particulars_rawPrice">￥{{detailsObj.basicInfo.originalPrice}}</view>
+        <view class="introduce_particulars_alreadyHave">
+          {{detailsObj.basicInfo.numberSells}}人购买
+        </view>
+      </view>
+      <view class="introduce_particulars_share">
+        <view class="introduce_particulars_share_transmit">
+          <image src="/image/转发.png" />
+        </view>
+        <view class="introduce_particulars_share_carriage">
+          <image src="/image/分享.png" />
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="select">
+    <view class="select_astrict">
+      <view class="select_astrict_selected">选择：花色 颜色</view>
+      <view class="select_astrict_arrows">></view>
+    </view>
+  </view>
+  <view class="commodity_introduce">
+    <view class="presentation">商品介绍</view>
+    <view class="scope">
+      <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+    </view>
+  </view>
+</view>
+<view class="bottomNavigation">
+  <view class="skipAreaLeft">
+    <view class="skipAreaLeft_left">
+      <view class="unify_image">
+        <image src="/image/客服.png" />
+      </view>
+    </view>
+    <view class="skipAreaLeft_center">
+      <view class="shoppingCart_image">
+        <image src="/image/购物车.png" />
+      </view>
+    </view>
+    <view class="skipAreaLeft_right" catchtap="skipShoppingCart">
+      <view class="ladyBags_image" catchtap="toCollect" data-item="{{detailsObj}}">
+        <image src="/image/星星 (1).png" />
+        <!-- <view> -->
+          <!-- <van-icon name="star" /> -->
+          <!-- <van-icon name="{{Icon==Icon?'star-o':'star'}}" class="collect_icon"/> -->
+        <!-- </view> -->
+      </view>
+    </view>
+  </view>
+  <view class="skipAreaCenter" catchtap="addShoppingCart" data-id="{{detailsObj}}">加入购物车</view>
+  <view class="skipAreaRight">立即购买</view>
+</view>
